@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "technical_test_kpi"
+version = "0.1.0"
+description = ""
+authors = ["david <david@itarverne.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.3"}
+typer = "^0.12.5"
+sqlmodel = "^0.0.22"
+
+[tool.poetry.scripts]
+"cli" = "cli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

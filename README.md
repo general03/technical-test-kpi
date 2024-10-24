@@ -10,9 +10,9 @@ Paris Region wants to have a web application to track the investments it makes f
 
 Write a REST API to retrieve the investments data:
 
-* List all the investments
-* List investments filtered by `ville` and/or by `etat_d_avancement`
-* Get a single investment by id
+- [x] List all the investments
+- [x] List investments filtered by `ville` and/or by `etat_d_avancement`
+- [x] Get a single investment by id
 
 Pay attention to the HTTP methods and status codes you use.
 
@@ -20,9 +20,9 @@ Pay attention to the HTTP methods and status codes you use.
 
 Implement a simple web application to show the investments:
 
-* Display the list of investments in the form of a table
-* Add a form so that we can trigger the API filters
-* Add a page to show the details of a single investment
+- [ ] Display the list of investments in the form of a table
+- [ ] Add a form so that we can trigger the API filters
+- [ ] Add a page to show the details of a single investment
 
 ### Bonus stages
 
@@ -44,3 +44,18 @@ Implement a simple web application to show the investments:
 This project is released under the MIT License.
 
 The dataset was released under Open Licence by Région Île-de-France: https://www.data.gouv.fr/fr/datasets/operations-de-construction-et-de-renovation-dans-les-lycees-francilens/
+
+# Resultat
+
+## Pre-requis
+
+- Install env management `pip install poetry`
+- Import du fichier de donnée `poetry run python cli/cli/main.py upload-file data/dataset.json`
+
+## Lancement du serveur
+
+`poetry run fastapi dev __init__.py`
+
+## Accès à l'API
+
+http://localhost:8000/
