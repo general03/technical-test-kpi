@@ -44,3 +44,18 @@ Implement a simple web application to show the investments:
 This project is released under the MIT License.
 
 The dataset was released under Open Licence by Région Île-de-France: https://www.data.gouv.fr/fr/datasets/operations-de-construction-et-de-renovation-dans-les-lycees-francilens/
+
+# Resultat
+
+## Pre-requis
+
+- Install env management `pip install poetry`
+- Import du fichier de donnée `poetry run python cli/cli/main.py upload-file data/dataset.json`
+
+## Lancement du serveur
+
+`poetry run fastapi dev __init__.py`
+
+## Accès à l'API
+
+http://localhost:8000/
