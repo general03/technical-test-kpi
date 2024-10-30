@@ -3,6 +3,8 @@ from sqlmodel import SQLModel, Field
 
 
 class Investment(SQLModel, table=True):
+    __table_args__ = {'extend_existing': True} 
+
     id: int = Field(default=None, primary_key=True)
     titreoperation: str
     entreprise: str | None = Field(default=None, nullable=True)

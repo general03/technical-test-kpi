@@ -20,7 +20,7 @@ Pay attention to the HTTP methods and status codes you use.
 
 Implement a simple web application to show the investments:
 
-- [ ] Display the list of investments in the form of a table
+- [x] Display the list of investments in the form of a table
 - [ ] Add a form so that we can trigger the API filters
 - [ ] Add a page to show the details of a single investment
 
@@ -28,10 +28,10 @@ Implement a simple web application to show the investments:
 
 > Those are not required but can be cool to do!
 
-* Add an endpoint to edit an investment
-* Deploy your application to Heroku
-* Display some graphs or interesting figures in the web application
-* Have some cool idea? Go on 👍
+- [X] Add an endpoint to edit an investment
+- [ ] Deploy your application to Heroku
+- [ ] Display some graphs or interesting figures in the web application
+- [x] Have some cool idea? Go on 👍
 
 ## Modalities
 
@@ -57,7 +57,7 @@ The dataset was released under Open Licence by Région Île-de-France: https://w
 
 ## Lancement du serveur
 
-`poetry run fastapi dev __init__.py`
+`cd back && poetry run fastapi dev __init__.py`
 
 ## Accès à l'API
 
@@ -74,6 +74,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
 `nvm install 20`
+
 `nvm use 20`
 
 `cd kpi && npm start`

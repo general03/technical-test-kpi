@@ -1,4 +1,6 @@
 from typing import Any, Dict, List
+
+from back.src.apps.investment.models.investment import Investment
 from ..models.etat_avancement_enum import EtatAvancementName
 from ..repositories.investment import InvestmentRepository
 
@@ -7,5 +9,8 @@ class InvestmentService:
 
     def get_investment(self, id: int | None = None, ville: str | None = None, etat_d_avancement: EtatAvancementName | None = None) -> List[Dict[str, Any]]:
         investment_repository = InvestmentRepository()
-        investment_data_object = investment_repository.get(id, ville, etat_d_avancement)
-        return [el.model_dump() for el in investment_data_object]
+        return investment_repository.get(id, ville, etat_d_avancement)
+    
+    def put_investment(self, id: int, data: Investment) -> bool | ValueError:
+        investment_repository = InvestmentRepository()
+        return investment_repository.put(id, data)
