@@ -47,10 +47,13 @@ The dataset was released under Open Licence by Région Île-de-France: https://w
 
 # Resultat
 
+## Back
+
 ## Pre-requis
 
 - Install env management `pip install poetry`
 - Import du fichier de donnée `poetry run python cli/cli/main.py upload-file data/dataset.json`
+- Update root path of project `export PYTHONPATH=$PYTHONPATH:"/home/david/projects/technical-test-kpi/back"`
 
 ## Lancement du serveur
 
@@ -59,3 +62,22 @@ The dataset was released under Open Licence by Région Île-de-France: https://w
 ## Accès à l'API
 
 http://localhost:8000/
+
+## Front
+
+## Pre-requis
+
+`wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+```
+`nvm install 20`
+`nvm use 20`
+
+`cd kpi && npm start`
+
+## Accès au front 
+
+http://localhost:4200

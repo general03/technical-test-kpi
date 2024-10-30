@@ -2,7 +2,7 @@ from sqlmodel import SQLModel, create_engine
 from src.apps.investment.models import *
 
 
-sqlite_url = "sqlite:///investment.db"
+sqlite_url = "sqlite:///data/investment.db"
 
 engine = create_engine(sqlite_url)
 
