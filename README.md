@@ -77,7 +77,7 @@ export NVM_DIR="$HOME/.nvm"
 
 `nvm use 20`
 
-`cd kpi && npm start`
+`cd front && npm start`
 
 ## Accès au front 
 
